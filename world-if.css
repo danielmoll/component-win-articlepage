@@ -1,3 +1,4 @@
+/* HEADER */
 .world-if-ArticleTemplate--imagecontainer-inner {
   position: relative;
 }
@@ -10,25 +11,26 @@
   background-color: rgba(0,0,0,.6);
 }
 
-.world-if-ArticleTemplate--section {
+.world-if-ArticleTemplate--section-section {
   display: inline-block;
   font-family: Neutra2Display-Medium;
   color: #ffffff;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 22px;
+  line-height: 32px;
   text-transform: uppercase;
   background: #e3120b;
   padding: 0 14px;
-  margin-bottom:0 7.5%;
+  margin:0 7.5%;
 }
 
 .world-if-ArticleTemplate--flytitle {
+  display: inline-block; /* Overrides WIN template */
   font-family: Neutra2Display-Medium;
   color: #e3120b;
   text-transform: uppercase;
   font-size: 50px;
   line-height: 44px;
-  margin: 10px 7.5% 0 7.5%;
+  margin: 10px 7.5% 0;
 }
 
 .world-if-ArticleTemplate--title {
@@ -37,24 +39,24 @@
   text-transform: uppercase;
   font-size: 50px;
   line-height: 44px;
-  margin: 0 7.5% 15px 7.5%;
+  margin: 0 7.5% 15px;
 }
 
 @media screen and (max-width: 790px) {
-  .world-if-ArticleTemplate--section {
-    font-size: 20px; /* 18px */
-    line-height: 30px;
+  .world-if-ArticleTemplate--section-section {
+    font-size: 18px; /* 18px */
+    line-height: 28px;
     padding: 0 12px;
   }
   .world-if-ArticleTemplate--flytitle {
     font-size: 36px; /* 35px & 30px */
     line-height: 30px; /* 30px & 25px */
-    margin: 8px 7.5% 0 7.5%;
+    margin: 8px 7.5% 0;
   }
   .world-if-ArticleTemplate--title {
     font-size: 36px; /* 35px & 30px */
     line-height: 30px; /* 30px & 25px */
-    margin: 0 7.5% 10px 7.5%;
+    margin: 0 7.5% 10px;
   }
 }
 
@@ -63,19 +65,132 @@
     position: static; /* max-width 480px */
     background: none;
   }
-  .world-if-ArticleTemplate--section {
+  .world-if-ArticleTemplate--section-section {
     font-size: 14px; /* 1pc */
-    line-height: 24px;
+    line-height: 22px;
     padding: 0 10px;
   }
   .world-if-ArticleTemplate--flytitle {
     font-size: 30px; /* 26px */
     line-height: 26px; /* 23px */
-    margin: 8px 7.5% 0 7.5%;
+    margin: 8px 7.5% 0;
   }
   .world-if-ArticleTemplate--title {
     font-size: 30px; /* 26px */
     line-height: 26px; /* 23px */
+    color: #313131;
     margin: 0 7.5%;
+  }
+}
+
+
+/* SUBHEADER */
+.world-if-ArticleTemplate--subheader {
+  width: 57.9%;
+  margin:0 7.5%;
+
+  border-left: 0; /* Override WIN template */
+  padding-left: 0; /* Override WIN template */
+  padding-top: 0; /* Override WIN template */
+}
+@media screen and (max-width: 860px) {
+  .world-if-ArticleTemplate--subheader {
+    width: 83.1%;
+    margin:0 7.5%;
+  }
+}
+.world-if-ArticleTemplate--pubdate {
+  font-family: Neutra2Display-Titling;
+  font-size: 21px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #38a8e0;
+  margin: 15px 0 0 ;
+}
+.world-if-ArticleTemplate--rubric {
+  font-family: Neutra2Display;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #313131;
+  margin: 15px 0 60px ;
+}
+
+@media screen and (max-width: 560px) {
+  .world-if-ArticleTemplate--pubdate {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px 0 0 ;
+  }
+  .world-if-ArticleTemplate--rubric {
+    font-size: 21px;
+    line-height: 28px;
+    margin: 10px 0 45px ;
+  }
+}
+
+
+/* BODY */
+.world-if-ArticleTemplate--section > p:first-of-type {
+  border-left: none; /* Override WIN */
+  padding: 0;
+}
+.world-if-ArticleTemplate--section > p:first-of-type:first-letter {
+  float: left;
+  font-family: Neutra2Display-Titling;
+  font-size: 70px;
+  line-height: 60px;
+  padding-top: 6px;
+  padding-right: 8px;
+  margin-left: -2px;
+  color: #e3120b;
+}
+.world-if-ArticleTemplate--section p {
+  font-family: "Georgia, serif";
+  font-size: 21px;
+  line-height: 34px;
+  color: #313131;
+
+  width: 57.9%;
+  margin: 0 0 20px 7.5%;
+  padding: 0;
+}
+.world-if-ArticleTemplate--crossheads {
+  width: 57.9%;
+  margin: 20px 0 7.5%;
+  padding: 0;
+}
+.world-if-ArticleTemplate--crossheads p {
+  font-size: 24px;
+  font-family: Neutra2Display;
+  font-weight: 700;
+}
+@media screen and (max-width: 860px) {
+  .world-if-ArticleTemplate--section p {
+    width: auto;
+    margin: 0 7.5% 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .world-if-ArticleTemplate--section > p:first-of-type:first-letter {
+    font-size: 62px;
+    padding-top: 0;
+    line-height: 55px;
+  }
+  .world-if-ArticleTemplate--section p {
+    font-size: 18px;
+    line-height: 28px;
+    width: auto;
+    margin: 0 7.5% 15px;
+  }
+  .world-if-ArticleTemplate--crossheads {
+    width: auto;
+    margin: 0 7.5%;
+    padding: 0;
+  }
+  .world-if-ArticleTemplate--crossheads p {
+    font-size: 21px;
+    font-family: Neutra2Display;
+    font-weight: 700;
   }
 }

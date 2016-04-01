@@ -7,6 +7,7 @@ import { WifSubheader, WinSubheader, WinLeaderSubheader, WinNumbersSubheader } f
 import {
   StandardArticleBody as StandardWinArticleBody,
   WorldInNumbersArticleBody as WorldInNumbersWinArticleBody,
+  WorldIfArticleBody,
 } from './body';
 import { WinFooter } from './footer';
 import CallToAction from './cta';
@@ -17,7 +18,7 @@ const config = {
     'world-if': {
       ArticleHeader: WifHeader,
       ArticleSubheader: WifSubheader,
-      ArticleBody: StandardWinArticleBody,
+      ArticleBody: WorldIfArticleBody,
       ArticleFooter: WinFooter,
     },
     'world-in-main': {

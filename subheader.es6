@@ -14,6 +14,7 @@ export class WifSubheader extends Component {
     return {
       generateClassNameList: PropTypes.func,
       rubric: PropTypes.string,
+      publishDate: PropTypes.string,
     };
   }
 
@@ -24,10 +25,20 @@ export class WifSubheader extends Component {
   }
 
   render() {
-    const { generateClassNameList, rubric } = this.props;
+    const { generateClassNameList, rubric, publishDate } = this.props;
+    const formattedPublishDate = new Date(publishDate).toDateString();
     return (
       <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
-        <h2
+        <div
+          itemProp="publishDate"
+          className={[
+            ...generateClassNameList('ArticleTemplate--pubdate'),
+            ...extendedSubheaderItemClasses,
+          ].join(' ')}
+        >
+          {formattedPublishDate}
+        </div>
+        <div
           itemProp="rubric"
           className={[
             ...generateClassNameList('ArticleTemplate--rubric'),
@@ -35,7 +46,7 @@ export class WifSubheader extends Component {
           ].join(' ')}
         >
           {rubric}
-        </h2>
+        </div>
       </ArticleSubheaderContainer>
     );
   }

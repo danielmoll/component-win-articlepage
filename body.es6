@@ -20,4 +20,7 @@ const WorldInNumbersArticleBody = createVariant({
   Country,
   Industry,
 })(ArticleBodyTemplate);
-export { StandardArticleBody, WorldInNumbersArticleBody };
+const WorldIfArticleBody = createVariant(
+  innerArticleBodyComponents
+)(ArticleBodyTemplate);
+export { StandardArticleBody, WorldInNumbersArticleBody, WorldIfArticleBody };

@@ -125,7 +125,7 @@ export class WifHeader extends Component {
         <div
           itemProp="section"
           className={[
-            ...generateClassNameList('ArticleTemplate--section'),
+            ...generateClassNameList('ArticleTemplate--section-section'),
             ...extendedHeaderItemClasses,
           ].join(' ')}
         >
