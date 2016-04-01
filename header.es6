@@ -96,6 +96,97 @@ export class WinHeader extends Component {
   }
 }
 
+export class WifHeader extends Component {
+
+  static get propTypes() {
+    return {
+      generateClassNameList: PropTypes.func,
+      mainImage: PropTypes.shape(Picture.propTypes || {}),
+      sectionName: PropTypes.string,
+      flytitle: PropTypes.string,
+      title: PropTypes.string,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      generateClassNameList: defaultGenerateClassNameList,
+    };
+  }
+
+  render() {
+    const { generateClassNameList, mainImage, flytitle, title, sectionName } = this.props;
+    let flytitleEl = null;
+    let titleEl = null;
+    let mainImageEl = null;
+    let sectionNameEl = null;
+    if (sectionName) {
+      sectionNameEl = (
+        <div
+          itemProp="section"
+          className={[
+            ...generateClassNameList('ArticleTemplate--section'),
+            ...extendedHeaderItemClasses,
+          ].join(' ')}
+        >
+          {sectionName}
+        </div>
+      );
+    }
+
+    if (flytitle) {
+      flytitleEl = (
+        <div
+          itemProp="headline"
+          aria-hidden="true"
+          className={[
+            ...generateClassNameList('ArticleTemplate--flytitle'),
+            ...extendedHeaderItemClasses,
+          ].join(' ')}
+        >
+          {flytitle}
+        </div>
+      );
+    }
+
+    if (title) {
+      titleEl = (
+        <h1
+          itemProp="alternativeHeadline"
+          aria-label={`${flytitle} ${title}`}
+          className={[
+            ...generateClassNameList('ArticleTemplate--title'),
+            ...extendedHeaderItemClasses,
+          ].join(' ')}
+        >
+          {title}
+        </h1>
+      );
+    }
+
+    if (mainImage) {
+      mainImageEl = (
+        <Picture
+          className={generateClassNameList('ArticleTemplate--image').join(' ')}
+          itemProp="image"
+          {...mainImage}
+        />
+      );
+    }
+
+    return (
+      <ImageContainer generateClassNameList={generateClassNameList}>
+        {mainImageEl}
+        <ArticleHeaderContainer generateClassNameList={generateClassNameList}>
+          {sectionNameEl}
+          {flytitleEl}
+          {titleEl}
+        </ArticleHeaderContainer>
+      </ImageContainer>
+    );
+  }
+}
+
 export class WinPredictorsHeader extends Component {
 
   static get propTypes() {

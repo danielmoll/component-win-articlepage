@@ -8,6 +8,39 @@ const extendedSubheaderItemClasses = [
   'margin-l-1',
   'gutter-l',
 ];
+export class WifSubheader extends Component {
+
+  static get propTypes() {
+    return {
+      generateClassNameList: PropTypes.func,
+      rubric: PropTypes.string,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      generateClassNameList: defaultGenerateClassNameList,
+    };
+  }
+
+  render() {
+    const { generateClassNameList, rubric } = this.props;
+    return (
+      <ArticleSubheaderContainer generateClassNameList={generateClassNameList}>
+        <h2
+          itemProp="rubric"
+          className={[
+            ...generateClassNameList('ArticleTemplate--rubric'),
+            ...extendedSubheaderItemClasses,
+          ].join(' ')}
+        >
+          {rubric}
+        </h2>
+      </ArticleSubheaderContainer>
+    );
+  }
+}
+
 export class WinSubheader extends Component {
 
   static get propTypes() {

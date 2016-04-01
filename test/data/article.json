@@ -71,25 +71,15 @@
       ],
       "alt": "this is the image description"
     },
-    "tileimage": {
-      "1.0x": "/example-assets/19c0e5b43e9e@1x.jpg",
-      "1.3x": "/example-assets/19c0e5b43e9e@1.3x.jpg",
-      "1.4x": "/example-assets/19c0e5b43e9e@1.4x.jpg",
-      "1.6x": "/example-assets/19c0e5b43e9e@1.6x.jpg",
-      "2.0x": "/example-assets/19c0e5b43e9e@2x.jpg",
-      "2.6x": "/example-assets/19c0e5b43e9e@2.6x.jpg",
-      "3.3x": "/example-assets/19c0e5b43e9e@3.3x.jpg"
-    },
-    "title": "The peril beyond Putin",
-    "toc": "If Russia breaks up",
-    "flytitle": "If Russia breaks up",
+    "title": "The first 100 days",
+    "flytitle": "If Hillary Clinton is President",
     "byline": "Fiammetta Rocco",
     "byline_location": "Mumbai",
     "bio": "<strong>Fiammetta Rocco</strong>: books and arts editor, <em>The Economist</em>",
-    "slug": "what-if-russia-breaks-up-the-peril-beyond-putin",
+    "slug": "if-hillary-clinton-is-president",
     "dateline": "MOSCOW",
     "rubric": "The world rightly worries about the prospect of a Greater Russia. But a Lesser Russia could be just as troubling",
-    "variantName": "world-in-main",
+    "variantName": "world-if",
     "content": [
       "UNDER Vladimir Putin’s presidency, Russia is seen in the outside world as an expansionist power trying to revise post-Soviet borders and rebuild an empire. But what if Russia itself—a country of nearly 200 nationalities that stretches across 11 time zones—is in danger of crumbling?",
       "It would not be the first time that Russia tried aggression and expansion as a defence against modernisation and by doing so undermined its own territorial integrity. In 1904, when Russia was on the verge of a revolution, Nicholas II attempted to stave off change by looking for national traitors and starting a small war with Japan. The war ended a year later in Russia’s defeat and 12 years later the tsarist Russian empire faded away in a few days. In 1979, as Communist rule struggled under the weight of its own contradictions, the Soviet Union invaded Afghanistan; 12 years later the Soviet Union collapsed just as suddenly.",
@@ -198,7 +188,7 @@
             ],
             "reserveHeight":100
          }
-      },      
+      },
       {
         "component": "ArticleSubHead",
         "props": {
