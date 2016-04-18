@@ -1,4 +1,4 @@
-import ArticleHeaderContainer, { ImageContainer } from '@economist/component-articletemplate/lib/header';
+import ArticleHeaderContainer from '@economist/component-articletemplate/lib/header';
 import Picture from '@economist/component-picture';
 import React from 'react';
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
@@ -72,14 +72,16 @@ export default function WifHeader({
   }
 
   return (
-    <ImageContainer generateClassNameList={generateClassNameList}>
+    <div className={generateClassNameList('article-template__header-container').join(' ')}>
       {mainImageEl}
       <ArticleHeaderContainer generateClassNameList={generateClassNameList}>
-        {sectionNameEl}
-        {flytitleEl}
-        {titleEl}
+        <div className="world-if-article-template__header-inner">
+          {sectionNameEl}
+          {flytitleEl}
+          {titleEl}
+        </div>
       </ArticleHeaderContainer>
-    </ImageContainer>
+    </div>
   );
 }
 
