@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  max-height: 100vh;
+  max-height: calc(100vh - 90px);
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -99,6 +99,12 @@
     color: #313131;
     font-size: 40px;
     line-height: 38px;
+  }
+}
+
+@media (width >= 640px) {
+  .world-if-article-template__header-container {
+    max-height: calc(100vh - 50px);
   }
 }
 
