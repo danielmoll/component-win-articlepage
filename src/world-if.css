@@ -33,7 +33,7 @@
   margin: 0 7.5%;
   padding: 0 12px;
   color: #fff;
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
@@ -45,7 +45,7 @@
   display: block;
   margin: 22px 7.5% 0;
   color: #e3120b;
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 50px;
   font-weight: 300;
   line-height: 44px;
@@ -55,7 +55,7 @@
 .world-if-article-template__title {
   margin: 0 7.5% 30px;
   color: #fff;
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 50px;
   font-weight: 700;
   line-height: 44px;
@@ -132,7 +132,7 @@
   width: 57.9%;
   margin: 0 7.5%;
   color: #38a8e0;
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 14px;
   line-height: 30px;
 }
@@ -141,7 +141,7 @@
   width: 57.9%;
   margin: 0 7.5%;
   color: #313131;
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -188,7 +188,7 @@
   margin-left: -2px;
   padding-top: 6px;
   padding-right: 6px;
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 65px;
   font-weight: 700;
   line-height: 55px;
@@ -217,7 +217,7 @@
 /* stylelint-disable selector-no-type */
 
 .world-if-article-template__crossheads p {
-  font-family: econsans;
+  font-family: EconSans;
   font-size: 23px;
   font-weight: 700;
 }

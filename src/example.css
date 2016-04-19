@@ -1,2 +1,5 @@
 @import './';
+@import '@economist/component-font-neutra2';
+@import '@economist/component-font-officina';
+@import '@economist/component-typography';
 @import '@economist/component-loading';
